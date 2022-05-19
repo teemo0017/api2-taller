@@ -3,7 +3,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -15,8 +14,6 @@ public class Employee {
     private double salary;
     private String deg;
 
-    @ManyToOne
-   private Department department;
 
     public int getEid() {
         return eid;
@@ -50,13 +47,6 @@ public class Employee {
         this.deg = deg;
     }
 
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
 
 
    
